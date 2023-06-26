@@ -39,10 +39,9 @@ function onSubmit(evt) {
   
 
   for (let i = 1; i <= inputAmount; i += 1){
-    if (i > 1) {
-      inputDelay += inputStep;
-    }
+   
     createPromise(i, inputDelay)
+    inputDelay += inputStep;
   }
   form.reset();
 }
