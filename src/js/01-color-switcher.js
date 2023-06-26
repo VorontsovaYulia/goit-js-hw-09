@@ -11,8 +11,9 @@ startBtn.addEventListener("click", () => {
     startBtn.disabled = true;
     stopBtn.disabled = false;
     
-    return id = setInterval(() => {
+    const id = setInterval(() => {
         document.body.style.backgroundColor = getRandomHexColor();
+        return id;
     }, 1000)
 });
 
