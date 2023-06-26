@@ -38,11 +38,11 @@ function onSubmit(evt) {
   const inputAmount = Number(current.amount.value);
   
 
-  for (let i = 0; i < inputAmount; i += 1){
-    if (i > 0) {
+  for (let i = 1; i <= inputAmount; i += 1){
+    if (i > 1) {
       inputDelay += inputStep;
     }
-    createPromise(i+1, inputDelay)
+    createPromise(i, inputDelay)
   }
   form.reset();
 }
